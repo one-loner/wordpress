@@ -1,0 +1,60 @@
+    1  sudo apt update && sudo apt upgrade -y
+    2  sudo apt-get install wget openssh-server
+    3  sudo apt install --no-install-recommends nginx mariadb-server php php-fpm php-zip php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc
+    4  sudo mysql -u root
+    5  sudo systemctl start nginx
+    6  cd /etc/nginx 
+    7  sudo wget http://distrib.sipteco.com/website.conf
+    8  ls
+    9  ip a
+   10  sudo nano website.conf 
+   11  cd /etc/php/7.2/fpm/pool.d/
+   12  cd /etc/php/7.4/fpm/pool.d/
+   13  ls
+   14  sudo mv www.conf www.conf.old
+   15  sudo wget http://distrib.sipteco.com/ubuntu-wp.conf
+   16  ls
+   17  sudo systemctl reload php7.4-fpm
+   18  sudo systemctl restart php7.4-fpm
+   19  sudo systemctl restart nginx
+   20  sudo systemctl  status php7.4-fpm
+   21  mysql -u root -p
+   22  mysql -u root
+   23  mysql -u root -p
+   24  sudo apt purge mariadb-server
+   25  sudo apt install mariadb-server
+   26  mysql -u root -p
+   27  mysql -u root
+   28  sudo mysql -u root
+   29  sudo mysql -u root -p
+   30  cd /var/www/
+   31  sudo wget https://ru.wordpress.org/latest-ru_RU.tar.gz
+   32  ls
+   33  tar xfv latest-ru_RU.tar.gz 
+   34  sudo tar xfv latest-ru_RU.tar.gz 
+   35  sudo chown -R www-data:www-data wordpress/
+   36  ip a
+   37  cd /etc/nginx/
+   38  ls
+   39  sudo nano website.conf
+   40  sudo nano nginx.conf 
+   41  nginx sites-enabled/
+   42  cd sites-enabled/
+   43  ls
+   44  sudo nano default
+   45  sudo systemctl restart nginx
+   46  sudo nano default
+   47  sudo systemctl restart nginx
+   48  cd /var/www
+   49  ls
+   50  cd wordpress
+   51  ls
+   52  cd ..
+   53  cd /etc/nginx/
+   54  ls
+   55  nano website.conf
+   56  sudo cp website.conf sites-enabled/website.conf
+   57  sudo systemctl restart nginx
+   58  cd
+   59  history>history.txt
+   60  history>history-full.txt
